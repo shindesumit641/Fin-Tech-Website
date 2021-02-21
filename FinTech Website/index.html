@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fin-Tech</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Flamenco&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="row clearfix">
+                <img src="images/Logo.png" class="logo">
+
+                <ul class="main-nav" animated slideInDown id="check-class">
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#fin-calculator">FIN-CALCULATOR</a></li>
+                    <li><a href="#contact">CONTACT </a></li>
+                </ul>
+                <a href="#" class="mobile-icon"  onclick="slideshow()"><i class="fa fa-bars"></i></a>
+            </div>
+        </nav>
+
+        <div class="home-content-header">
+        <h1>WELCOME TO <span class="color-change">FIN-TECH</span>.<br>
+            LEARN ABOUT INVESTMENT<br> AND FINANCIAL PLANNING </h1>
+
+        <a href="blog.html" class="btn blog">Visit Blog</a>
+        </div>
+    </header>
+
+    <script type="text/javascript">
+    
+    function slideshow(){
+        var x =document.getElementById('check-class');
+        if(x.style.display === "none"){
+            x.style.display="block";
+        }
+        else{
+            x.style.display="none";
+        }
+    }
+
+    </script>
+
+    <section class="secRight" id="about">
+        <h1 class="About">About US</h1>
+        <h2 class="sectionTag">Partners for wealth creation</h2>
+        <p class="sectionSubTag">A leading Indian investment services company,
+            Fin-Tech has presence across India and in the Gulf Corporation Council countries.
+            A rich heritage of providing effective financial solutions has made us a trusted
+            partner of over a million people. Our multi-channel distribution network comprising
+            of branches, online portal, dedicated customer care and phone service caters to all the
+            investment needs of the clients.<br> We provide Service such as Advice for Investment in
+            Stock Market, Mutual Funds, Gold, IPO , and many more. You can read our Expert Blog to get knowledge
+            about different Field of Investment.<br> 
+            <h3 class="TagLine">"We help people to take right Investment decision for themself."</h3></p>
+            <div>
+                <img src="images/About.jpg" alt="Team Image" class="AboutImage">
+            </div>
+    </section>
+
+
+    <section class="fin-calculator" >
+            <img src="images/Fin-Calculator.jpg" class="fin-Image" id="fin-calculator">
+            <div class="fin-content" >
+                <h1 class="fin-message">PLAN YOUR FINANCE <span class="today">TODAY.</span></h1>
+                <a href="https://sipcalculator.in/" class="btn sip">SIP PLANNING</a>
+                </div>
+    </section>
+
+    <hr>
+    <section class="contact" id="contact">
+        <h2 class="text-contact">CONTACT US</h2>
+        <form action="connect.php" method="post">
+            <div class="form">
+                <input class="form-input" type="text" name="name" id="name" placeholder="Enter Your Name">
+                <input class="form-input" type="text" name="phone" id="phone" placeholder="Enter Your Phone">
+                <input class="form-input" type="text" name="email" id="email" placeholder="Enter Your Email">
+                <textarea class="form-input" name="text" id="text" cols="30" rows="10"placeholder="Ellaborate your concern"></textarea>
+                <button class="btn submit">Submit</button>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <p class="footer-text">
+        Copyright &copy; 2020 - All Rights Reserved
+        </p>
+    </footer>
+        
+</body>
+
+</html>

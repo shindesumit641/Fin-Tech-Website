@@ -1,0 +1,321 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background: rgb(224, 223, 201);
+    font-size: 20px;
+    overflow: scroll;
+    color: white;
+    font-family: 'Flamenco', cursive;
+}
+
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../images/Home.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+
+}
+
+.clearfix:after{
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    clear: both;
+}
+
+.row{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.logo{
+    height: 180px;
+    width: auto;
+    float: left;
+   
+}
+
+.logo:hover{
+    height:185px;
+}
+
+.main-nav{
+    float: right;
+    margin-top: 60px;
+}
+
+.main-nav li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+}
+
+.main-nav li a {
+    padding: 5px 0px;
+    color: #ffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: 100;
+}
+
+.main-nav li a:hover{
+    border-bottom: 2px solid #FCC133 ;
+}
+
+.home-content-header{
+    width: 1180px;
+    position: absolute;
+    top:55%;
+    left: 50%;
+    transform: translate(-50%,0%);
+}
+
+h1{
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: lighter;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2;
+
+}
+
+.blog{
+    background-color: transparent;
+    color: #FCC133;
+    margin-right: 15px;
+    border: 2px solid  #FCC133;
+}
+
+.blog:hover{
+    background-color: white;
+}
+
+.color-change{
+    animation: colorchangefintech 1s infinite;
+}
+
+@keyframes colorchangefintech{
+    0%{color:white;}
+    25%{color:#FCC133;}
+    50%{color: red;}
+    100%{color: #FCC133}
+}
+
+.mobile-icon{display: none;}
+
+.secRight{
+    height: 500px;
+    display: inline-block;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 90%;
+    padding: 100px 10%;
+    margin: auto;
+    color:black;
+    float:right;
+}
+
+.About{
+    color: black;
+    padding-left: 28%;
+}
+
+.sectionTag{
+    display: block;
+    padding-inline: 23%;
+}
+
+.sectionSubTag{
+    padding: 5px 0px;
+    padding-right: 100px;
+}
+
+.TagLine{
+    padding: 7px 10%;
+    color:#221b0a;  
+}
+
+.AboutImage{
+    height: 180px;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 0px 28%;
+    margin-bottom: 10%;
+    
+}
+
+.AboutImage:hover{
+    height: 182px;
+}
+
+.fin-calculator{
+    max-width: 1180px;
+    padding-top: 12%;
+    align-items: center;
+    display: inline-block;
+    padding-left: 35px;
+}
+
+.fin-content{
+    width: 1180px;
+    position: absolute;
+    top:278%;
+    left: 50%;
+    transform: translate(-50%,0%);
+}
+
+.fin-message{
+    color: black;
+}
+
+.today{
+    color:white;
+}
+
+.sip{
+    background-color: transparent;
+    color: #ffffff;
+    text-size-adjust: 15px;
+    margin-right: 15px;
+    border: 3px solid  #ffcd57;
+}
+
+.sip:hover{
+    background-color: #ffc53d;
+}
+
+.contact{
+    margin: 50px 0;
+    height: 90vh;
+
+}
+
+.text-contact{
+    text-align: center;
+    color: black;
+}
+
+.form{
+    max-width: 500px;
+    margin:  42px auto;
+}
+
+.form-input{
+    margin: 14px 0;
+    padding: 5px 3px;
+    width: 100%;
+    font-size: 19px;
+    border: 2px solid grey;
+    border-radius: 6px;
+}
+
+.submit{
+    margin: 20px 38%;
+    background-color: transparent;
+    color: #000000;
+    margin-right: 15px;
+    border: 2px solid #000000;
+}
+
+.submit:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+.footer-text{
+    height: 8vh;
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 20px 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+}
+
+
+
+
+
+/*        ------------    BLOG PAGE   ---------------        */
+.blogheadline{
+    color: green;
+    text-align: center;
+    margin: 20px;
+    font-size: 35px;
+}
+
+.blogPage{
+    margin: 23px 253px;
+    padding: 73px 95px;
+    border: 3px solid green;
+    text-align: center;
+    color: black;
+}
+
+.date{
+    text-align: left;
+    font-size: 20px;
+}
+
+.sebi{
+    margin: 15px;
+}
+
+
+
+
+/*        -------- Responsive queries ------------      */
+
+@media only screen and (max-width: 1180px){
+    .home-content-header{
+        width: 100%;
+        padding: 0 2%;
+    }
+}
+
+@media only screen and (max-width: 998px){
+    h1{font-size: 200%;}
+}
+
+@media only screen and (max-width: 768px){
+    h1{font-size: 180%;}
+
+    .main-nav{display:none;}
+
+    .mobile-icon{
+        display: inline-block;
+        color:white;
+        float: right;
+        margin-top: 30px;
+        margin-right: 20px;
+    }
+
+    .main-nav{float:left;}
+
+    .main-nav li{
+        display: block;
+        margin-top: 10px;
+    }
+}
